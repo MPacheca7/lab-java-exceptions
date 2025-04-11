@@ -4,11 +4,11 @@ public class Person {
     private int age;
     private String ocupation;
 
-    public Person(int id, String name, int age, String ocupation) {
+    public Person(int id, String name, int age, String occupation) {
         this.id = id;
         this.name = name;
         setAge(age);
-        this.ocupation = ocupation;
+        this.ocupation = occupation;
     }
 
     public int getId() {
@@ -32,7 +32,7 @@ public class Person {
     }
 
     public void setAge(int age) {
-        if (age < 0) {
+        if (age <= 0) {
             throw new IllegalArgumentException("Introduce un valor mayor que 0");
         } // genera un error si age es menor que 0.
         this.age = age;
@@ -44,5 +44,14 @@ public class Person {
 
     public void setOcupation(String ocupation) {
         this.ocupation = ocupation;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", ocupation='" + ocupation + '\'' +
+                '}';
     }
 }
