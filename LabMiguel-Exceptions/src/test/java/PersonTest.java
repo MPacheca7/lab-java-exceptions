@@ -5,7 +5,7 @@ public class PersonTest {
     @Test
     public void ageMore(){
         var personTest = new Person(1, "John Smith", 30, "Teacher");
-        System.out.println(personTest);
+        assert personTest.getAge() > 0;
     }
 
 }

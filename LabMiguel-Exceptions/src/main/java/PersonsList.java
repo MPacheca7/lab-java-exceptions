@@ -2,15 +2,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class PersonsList extends Person {
-    public PersonsList(int id, String name, int age, String occupation) {
+    private String lastName;
+
+    public PersonsList(int id, String name, String lastName, int age, String occupation) {
         super(id, name, age, occupation);
+        this.lastName = lastName;
     }
 
-    public static String concat(String firstName, String lastName) throws IllegalArgumentException {
-        if (firstName == null || lastName == null || firstName.isEmpty() || lastName.isEmpty() || firstName.contains(" ") || lastName.contains(" ")) {
+    public static String concat(String name, String lastName) throws IllegalArgumentException {
+        if (name == null || lastName == null || name.isEmpty() || lastName.isEmpty() || name.contains(" ") || lastName.contains(" ")) {
             throw new IllegalArgumentException("First and last name cannot be null");
         }
-        return firstName + " " + lastName;
+        return name + " " + lastName;
     } // Comprueba el formato
 
 
@@ -28,7 +31,7 @@ public class PersonsList extends Person {
         System.out.println("Original: " + person1);
 
         //Clona a la persona 1
-        PersonsList clonerP1 = new PersonsList(0, "", 1, "");
+        PersonsList clonerP1 = new PersonsList(0, "", "", 1, "");
         Person cloned = clonerP1.clonePerson(person1);
         System.out.println("Clonado: " + cloned);
 
@@ -58,7 +61,8 @@ public class PersonsList extends Person {
             System.out.println(cloned.getId());
         }
 
-        // !!!! La edad se comprueba desde PersonTest
+        // La edad se comprueba desde PersonTest
+        // El restante en PersonListTest
     }
 
 
