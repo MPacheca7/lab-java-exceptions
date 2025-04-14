@@ -9,3 +9,10 @@ Se ha clonado la persona: Person{name='John Smith', age=30, ocupation='Teacher'}
 Se ha clonado la persona: Person{name='John Smith', age=0, ocupation='Teacher'}
 Se ha clonado la persona: Person{name='John Smith', age=0, ocupation='Teacher'}
 Se ha clonado la persona: Person{name='John Smith', age=30, ocupation='Teacher'}
+Se ha clonado la persona: Person{name='John Smith', age=30, ocupation='Teacher'}
+Se ha clonado la persona: Person{name='John', age=30, ocupation='Teacher'}
+Se ha clonado la persona: Person{name='John', age=30, ocupation='Teacher'}
+Se ha clonado la persona: Person{name='John', age=30, ocupation='Teacher'}
+Se ha clonado la persona: Person{name='John Smith', age=30, ocupation='Teacher'}
+Se ha clonado la persona: Person{name='John Smith', age=30, ocupation='Teacher'}
+Se ha clonado la persona: Person{name='John Smith', age=30, ocupation='Teacher'}

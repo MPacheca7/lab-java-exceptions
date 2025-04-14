@@ -58,7 +58,7 @@ public class PersonsList extends Person {
             System.out.println(cloned.getId());
         }
 
-        // !!!! La edad se comprueba desde Person
+        // !!!! La edad se comprueba desde PersonTest
     }
 
 
